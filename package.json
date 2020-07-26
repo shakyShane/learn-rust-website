@@ -1,0 +1,21 @@
+{
+  "name": "learn-rust",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "watch": "node bs.js",
+    "build": "npm run build:css && npm run build:purge",
+    "build:css": "tailwindcss build src/styles.css -o dist/styles.css",
+    "build:purge": "purgecss --css dist/styles.css --content dist/index.html --output dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "2.26.12",
+    "bs-html-injector": "3.0.3",
+    "purgecss": "^2.3.0",
+    "tailwindcss": "^1.5.2"
+  }
+}
