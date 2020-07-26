@@ -30,7 +30,10 @@
                     Professional screencasts covering real-world use cases.
                 </p>
             </div>
-            <form class="mt-8" name="subscribe" netlify>
+            <form class="mt-8" name="subscribe" netlify-honeypot="bot-field-honey" data-netlify="true">
+                <p style="height: 0; overflow: hidden">
+                    <input name="bot-field-honey" />
+                </p>
                 <div class="rounded-md shadow-sm mb-6">
                     <div>
                         <label class="block tracking-wide text-gray-700 text-xs font-bold mb-2" for="email">
@@ -44,7 +47,7 @@
                     <label class="block tracking-wide text-gray-700 text-xs font-bold mb-2" for="email">
                         What would you like to see? (optional)
                     </label>
-                    <textarea aria-label="info" name="info" type="info" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-md focus:outline-none focus:shadow-outline-blue focus:border-blue-300 focus:z-10 sm:text-sm sm:leading-5"></textarea>
+                    <textarea aria-label="info" name="info" type="info" class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-md focus:outline-none focus:shadow-outline-blue focus:border-blue-300 focus:z-10 sm:text-sm sm:leading-5"></textarea>
                 </div>
 
 
